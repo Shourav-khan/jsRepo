@@ -159,5 +159,42 @@ function Person (first,last) {
 const per1 = new Person('Shourav','khan');
 const per2 = new Person('kamal','Khan');
 
-console.log(per1);
-console.log(per2);
+// console.log(per1);
+// console.log(per2);
+
+
+
+
+                                /* ARRAY */
+
+const phones = ['redmi', 'MI', 'Iphone'];
+
+phones[2] = 'My phone';
+phones[3] = 'kawasaki';
+phones[4] = 'messi';
+
+//  console.log(phones);
+// console.log(phones[phones.length - 1]); //length
+
+//  phones.pop(); //delete last item of array
+//  phones.push('awei'); //delete last item of array
+
+// console.log(phones.toString());
+// console.log(phones.join(" ! "));
+
+const p=[];
+const a = [1,2,3];
+const b = [1,2,3];
+const c = [1,2,3];
+
+const z = p.concat(a,b,c);
+
+// console.log(z);
+
+const D = [
+    [1,2,3,10,100],
+    [4,5,6],
+];
+
+console.log(D);
+console.log(D.flat());
