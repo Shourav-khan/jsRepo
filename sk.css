@@ -1,10 +1,41 @@
-button {
-    background: orange;
-    padding: 20px 45px;
-    color: white;
-    font-size: 18px;
-    font-weight: 50px; 
-    border: 0;
-    border-radius: 10px;
+body{
+    text-align: center;
+    background: gray;
+}
 
+button, #form input[type="submit"] {
+    background: red;
+    color: white;
+    padding: 4px 20px;
+    font-size: 25px;
+    border: 0px;
+    border-radius: 10px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+button:hover, #form input[type="submit"]:hover {
+    background: black;
+    color: green;
+    padding: 8px 30px;
+}
+
+#form{ 
+    width: 90%;
+    padding: 3%;
+}
+
+#form label{
+        display: block;
+        text-align: left;
+       
+}
+
+#form input, #form textarea{
+
+    display: block;
+     width: 100%;   
+    padding: 10px 10px;
+    margin-top: 2%;
+    margin-bottom: 5%;
 }
