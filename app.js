@@ -225,7 +225,18 @@
 //     document.getElementById('maro').innerHTML='change hoise'; 
 // });
 
-document.getElementById('maro').onclick = function(){
-    document.getElementById('aso').innerHTML='change hoise'; 
-    document.getElementById('maro').innerHTML='change hoise'; 
-}
+// document.getElementById('maro').onclick = function(){
+//     document.getElementById('aso').innerHTML='change hoise'; 
+//     document.getElementById('maro').innerHTML='change hoise'; 
+// }
+
+
+/** -------------MAth ---------------*/
+
+let upperValue = 6;
+let lowerValue = 1;
+
+let till = Math.ceil( Math.random() * upperValue);
+
+console.log(till);
+
