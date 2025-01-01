@@ -233,10 +233,16 @@
 
 /** -------------MAth ---------------*/
 
-let upperValue = 6;
-let lowerValue = 1;
+// let upperValue = 6;
+// let lowerValue = 1;
 
-let till = Math.ceil( Math.random() * upperValue);
+// let till = Math.ceil( Math.random() * upperValue);
 
-console.log(till);
+// console.log(till);
+
+function roleDice(){
+    let randomNum = Math.ceil(Math.random() * 6);
+
+}
+
 
