@@ -243,11 +243,25 @@
 
 //                        lodo
 
-function roleDice(){
-    let randomNum = Math.ceil(Math.random() * 6);
-    let imageSource = 'img/'+ randomNum + '.png';
-    document.getElementById('ludo').src = imageSource;
+// function roleDice(){
+//     let randomNum = Math.ceil(Math.random() * 6);
+//     let imageSource = 'img/'+ randomNum + '.png';
+//     document.getElementById('ludo').src = imageSource;
 
-}
+// }
+
+                    // DATE
 
 
+// function loop(){
+//     for (let step = 1; step < 1000; step++) {
+//         console.log('Shourav');
+//     }
+
+// }
+
+// let startTime = Date.now();
+// loop();
+// let endtTime = Date.now();
+
+// console.log(`time take ${startTime - endtTime}`);
