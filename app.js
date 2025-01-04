@@ -265,3 +265,10 @@
 // let endtTime = Date.now();
 
 // console.log(`time take ${startTime - endtTime}`);
+
+
+// Premitive data = number , boolea, String, null, undefine, Symbol. 
+// Non-premitive = Array, objct 
+
+// Premitive { main data change hobe na }
+// Non-premitive: {main data change hobe} 
