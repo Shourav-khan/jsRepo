@@ -240,6 +240,9 @@
 
 // console.log(till);
 
+
+//                        lodo
+
 function roleDice(){
     let randomNum = Math.ceil(Math.random() * 6);
     let imageSource = 'img/'+ randomNum + '.png';
