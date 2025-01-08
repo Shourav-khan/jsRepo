@@ -1,5 +1,6 @@
 body{
     text-align: center;
+    justify-content: center;
     background: gray;
 }
 
@@ -38,4 +39,24 @@ button:hover, #form input[type="submit"]:hover {
     padding: 10px 10px;
     margin-top: 2%;
     margin-bottom: 5%;
+}
+
+
+.rectangle{
+    
+    display: flex;
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    margin-left: 627px;
+    border-color: blue;
+    
+}
+
+.mainDiv{
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+
 }
