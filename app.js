@@ -280,12 +280,35 @@ const inputVal = document.getElementById("valueInput");
 const listToDo = document.getElementById("to-do-list");
 
 
+
+
+const getDataFromLocal = () => {
+
+    return JSON.parse(localStorage.getItem('shourav'));
+}
+
+let valArr = getDataFromLocal() || [];
+
 const addTodo = (e) => {
 
+    const inputvalStore = inputVal.value.trim();
+    valArr.push(inputvalStore);
+    valArr = [...new Set(valArr)];
+    console.log(valArr);
+    localStorage.setItem('shourav' , JSON.stringify(valArr));
+
+
     e.preventDefault();
-    console.log("testing")
+    const divEle = document.createElement("div");
+    divEle.classList.add("main-to-do-list");
+    divEle.innerHTML = `<li>${inputVal.value}</li> <button class="dltbtn">Delete</button>`;
+    listToDo.append(divEle);
 
 };
+
+const showToDoList = () => {
+    console.log(valArr);
+}
 
 document.querySelector(".btnn").addEventListener("click" , (e) => {
 
