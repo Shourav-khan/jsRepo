@@ -7,8 +7,8 @@ body{
 button, #form input[type="submit"] {
     background: red;
     color: white;
-    padding: 4px 20px;
-    font-size: 25px;
+    padding: 4px 10px;
+    font-size: 20px;
     border: 0px;
     border-radius: 10px;
     transition: 0.8s;
@@ -42,21 +42,3 @@ button:hover, #form input[type="submit"]:hover {
 }
 
 
-.rectangle{
-    
-    display: flex;
-    background-color: black;
-    height: 100px;
-    width: 100px;
-    margin-left: 627px;
-    border-color: blue;
-    
-}
-
-.mainDiv{
-
-    display: block;
-    justify-content: center;
-    align-items: center;
-
-}

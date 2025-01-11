@@ -272,3 +272,22 @@
 
 // Premitive { main data change hobe na }
 // Non-premitive: {main data change hobe} 
+
+
+
+
+const inputVal = document.getElementById("valueInput");
+const listToDo = document.getElementById("to-do-list");
+
+
+const addTodo = (e) => {
+
+    e.preventDefault();
+    console.log("testing")
+
+};
+
+document.querySelector(".btnn").addEventListener("click" , (e) => {
+
+    addTodo(e);
+});
