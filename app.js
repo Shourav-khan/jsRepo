@@ -324,3 +324,43 @@
 
 //     addTodo(e);
 // });
+
+
+
+// function setTimeTo() {
+
+//     console.log("Hi");
+
+// }
+
+
+//  let x = setTimeout(setTimeTo, 5000);
+// clearTimeout(x);
+
+
+// function intervalItIs() {
+//     console.log("shourav");
+// }
+
+
+
+// let y = setInterval(intervalItIs, 2000);
+
+// setTimeout(() => {
+//    clearInterval(y); 
+// }, 5000);
+
+// const currentTime = () => {
+//     let curTime = new Date().toLocaleTimeString();
+//     document.getElementById("clock").innerText = curTime;
+//   };
+//   currentTime();
+
+//   const intervalId = setInterval(() => {
+//     currentTime();
+//   }, 1000);
+
+//   setTimeout(() => clearInterval(intervalId), 5000);
+
+
+
