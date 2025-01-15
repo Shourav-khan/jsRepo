@@ -381,7 +381,9 @@ const startTimer = () => {
 
 
 const stopTimer = () => {
+    getTimer();
     clearInterval(intervalId);
+    
 };
 
 
