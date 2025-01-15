@@ -363,4 +363,66 @@
 //   setTimeout(() => clearInterval(intervalId), 5000);
 
 
+                            //  Stop Watch
 
+const countDownEle = document.getElementById("countDown");
+const resetValueEle = document.getElementById("resetValue");
+let startCount = 0;
+let intervalId;
+
+const startTimer = () => {
+
+    intervalId =   setInterval(() => {
+         countDownEle.innerText = startCount++; 
+    }, 1000);
+    
+       
+};
+
+
+const stopTimer = () => {
+    clearInterval(intervalId);
+};
+
+
+
+const resetTimer = () => {
+
+    startCount = 0;
+    countDownEle.innerText = startCount;
+    clearInterval(intervalId);
+};
+
+const getTimer = () => {
+    const pTag = document.createElement("p");
+    pTag.innerText = `The time is ${startCount - 1}`;
+    resetValueEle.append(pTag);
+
+};
+
+const clearTimer = () => {
+    resetValueEle.innerHTML = '';
+};
+
+
+
+document
+    .querySelector(".start_btn").addEventListener("click" , startTimer);
+    
+document
+    .querySelector(".reset_btn").addEventListener("click" , resetTimer);
+
+document
+    .querySelector(".stop_btn").addEventListener("click" , stopTimer);
+
+    
+document
+.querySelector(".time_btn").addEventListener("click" , getTimer);
+
+
+document
+    .querySelector(".clear_btn").addEventListener("click" , clearTimer);
+
+
+    
+    
