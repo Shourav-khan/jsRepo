@@ -365,65 +365,65 @@
 
                             //  Stop Watch
 
-const countDownEle = document.getElementById("countDown");
-const resetValueEle = document.getElementById("resetValue");
-let startCount = 0;
-let intervalId;
+// const countDownEle = document.getElementById("countDown");
+// const resetValueEle = document.getElementById("resetValue");
+// let startCount = 0;
+// let intervalId;
 
-const startTimer = () => {
+// const startTimer = () => {
 
-    intervalId =   setInterval(() => {
-         countDownEle.innerText = startCount++; 
-    }, 1000);
+//     intervalId =   setInterval(() => {
+//          countDownEle.innerText = startCount++; 
+//     }, 1000);
     
        
-};
+// };
 
 
-const stopTimer = () => {
-    getTimer();
-    clearInterval(intervalId);
+// const stopTimer = () => {
+//     getTimer();
+//     clearInterval(intervalId);
     
-};
+// };
 
 
 
-const resetTimer = () => {
+// const resetTimer = () => {
 
-    startCount = 0;
-    countDownEle.innerText = startCount;
-    clearInterval(intervalId);
-};
+//     startCount = 0;
+//     countDownEle.innerText = startCount;
+//     clearInterval(intervalId);
+// };
 
-const getTimer = () => {
-    const pTag = document.createElement("p");
-    pTag.innerText = `The time is ${startCount - 1}`;
-    resetValueEle.append(pTag);
+// const getTimer = () => {
+//     const pTag = document.createElement("p");
+//     pTag.innerText = `The time is ${startCount - 1}`;
+//     resetValueEle.append(pTag);
 
-};
+// };
 
-const clearTimer = () => {
-    resetValueEle.innerHTML = '';
-};
+// const clearTimer = () => {
+//     resetValueEle.innerHTML = '';
+// };
 
 
 
-document
-    .querySelector(".start_btn").addEventListener("click" , startTimer);
+// document
+//     .querySelector(".start_btn").addEventListener("click" , startTimer);
     
-document
-    .querySelector(".reset_btn").addEventListener("click" , resetTimer);
+// document
+//     .querySelector(".reset_btn").addEventListener("click" , resetTimer);
 
-document
-    .querySelector(".stop_btn").addEventListener("click" , stopTimer);
+// document
+//     .querySelector(".stop_btn").addEventListener("click" , stopTimer);
 
     
-document
-.querySelector(".time_btn").addEventListener("click" , getTimer);
+// document
+// .querySelector(".time_btn").addEventListener("click" , getTimer);
 
 
-document
-    .querySelector(".clear_btn").addEventListener("click" , clearTimer);
+// document
+//     .querySelector(".clear_btn").addEventListener("click" , clearTimer);
 
 
     
