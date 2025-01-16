@@ -426,5 +426,23 @@
 //     .querySelector(".clear_btn").addEventListener("click" , clearTimer);
 
 
-    
-    
+                            
+
+
+
+                                        // OBJECT
+
+
+ID = "studentID";
+
+let student = {
+    [ID] : "A221C",
+    Name : "rakib",
+    isStudent : 'True',
+
+    information : function(){
+            console.log(`Your ${ID} is ${student[ID]}, So check it now`);
+    }
+
+};
+    console.log(student.information());
