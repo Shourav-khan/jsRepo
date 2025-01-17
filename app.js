@@ -433,16 +433,48 @@
                                         // OBJECT
 
 
-ID = "studentID";
+// ID = "studentID";
 
-let student = {
-    [ID] : "A221C",
-    Name : "rakib",
-    isStudent : 'True',
+// let student = {
+//     [ID] : "A221C",
+//     Name : "rakib",
+//     isStudent : 'True',
 
-    information : function(){
-            console.log(`Your ${ID} is ${student[ID]}, So check it now`);
-    }
+//     information : function(){
+//             console.log(`Your ${ID} is ${student[ID]}, So check it now`);
+//     }
 
-};
-    console.log(student.information());
+// };
+//     console.log(student.information());
+
+
+                // Pass by reference 
+
+                // let car = {
+                //     Name : "corolla",
+                //     color : "red",
+                //     RegNum: "DM LA-116394"
+                // };
+
+                
+                // let car1 = car;
+                // car1.Name = "BMW";
+                // console.log(car1);
+                // console.log("original", car);
+                
+
+                // PASS By value 
+
+                // let car = {
+                //         Name : "corolla",
+                //         color : "red",
+                //         RegNum: "DM LA-116394"
+                //     };
+
+                //     let bmwCar = Object.assign({}, car);
+                //     bmwCar.Name = "BMW";
+
+                //     console.log(bmwCar);
+                //     console.log(car);
+
+                
